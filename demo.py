@@ -12,11 +12,6 @@ plate_img, plate = extract_plate(original_image)
 dimensions, img_dilate = segment_characters(plate)
 char_list = find_contours(dimensions, img_dilate)
 
-# for i, ch in enumerate(char_list):
-#     img_ = cv2.resize(ch, (28,28))
-#     cv2.imshow('Test', img_)
-#     cv2.waitKey(0)
-
 model = keras.models.load_model('model.h5')
 
 print(show_results(model, char_list))
