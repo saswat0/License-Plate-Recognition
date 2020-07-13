@@ -4,7 +4,7 @@ Detection of license plate and recognising the registration number
 ### Usage
 *   Clone the repository
     ```bash
-    https://github.com/saswat0/License-Plate-Recognition.git
+    git clone https://github.com/saswat0/License-Plate-Recognition.git
     ```
 *   Run demo code
     ```bash
