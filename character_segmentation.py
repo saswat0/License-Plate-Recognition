@@ -21,8 +21,3 @@ def segment_characters(image) :
     # Estimations of character contours sizes of cropped license plates
     dimensions = [LP_WIDTH/6, LP_WIDTH/2, LP_HEIGHT/10, 2*LP_HEIGHT/3]
     return dimensions, img_dilate
-
-    # Get contours within cropped license plate
-    # char_list = find_contours(dimensions, img_dilate)
-
-    # return char_list

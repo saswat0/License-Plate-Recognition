@@ -16,9 +16,13 @@ def show_results(model, char_list):
     output = []
     for i,ch in enumerate(char_list): #iterating over the characters
         img_ = cv2.resize(ch, (28,28))
+        # cv2.imshow('Test', img_)
+        # cv2.waitKey(0)
         img = fix_dimension(img_)
         img = img.reshape(1,28,28,3) #preparing image for the model
+        # print(model.predict_classes(img)[0])
         y_ = model.predict_classes(img)[0] #predicting the class
+        # y_ = np.argmax(model.predict_classes(img), axis=-1)
         character = dic[y_] #
         output.append(character) #storing the result in a list
         
