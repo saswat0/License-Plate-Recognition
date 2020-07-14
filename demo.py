@@ -7,8 +7,10 @@ import cv2
 import numpy as np
 import keras
 
-original_image = cv2.imread('test.jpg')
+original_image = cv2.imread('test.jpeg')
 plate_img, plate = extract_plate(original_image)
+# cv2.imshow('Test', plate_img)
+# cv2.waitKey(0)
 dimensions, img_dilate = segment_characters(plate)
 char_list = find_contours(dimensions, img_dilate)
 
