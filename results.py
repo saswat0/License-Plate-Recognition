@@ -20,9 +20,10 @@ def show_results(model, char_list):
         # cv2.waitKey(0)
         img = fix_dimension(img_)
         img = img.reshape(1,28,28,3) #preparing image for the model
-        # print(model.predict_classes(img)[0])
-        y_ = model.predict_classes(img)[0] #predicting the class
+        # print(np.argmax(model.predict(img), axis=-1))
+        # y_ = model.predict_classes(img)[0] #predicting the class
         # y_ = np.argmax(model.predict_classes(img), axis=-1)
+        y_ = np.argmax(model.predict(img), axis=-1)[0]
         character = dic[y_] #
         output.append(character) #storing the result in a list
         
