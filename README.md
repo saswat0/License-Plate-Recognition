@@ -16,3 +16,5 @@ The pretrained weights (validation accuracy 99.2%) are attached already. In case
 ```bash
 python train.py
 ```
+
+**Update**: Implemented a finer network under alpr directory by following this [paper](http://sergiomsilva.com/pubs/alpr-unconstrained/)
