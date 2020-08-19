@@ -18,10 +18,6 @@ $ cd darknet && make
 * NumPy 1.14
 * Python 2.7
 
-Install requirements:
-```bash
-$ pip install -r requirements.txt
-```
 
 ### Running on example video
 *   Download the video file from [here](http://youtube.com/watch?v=hv94fk7ldS8) and save it as demo.mp4
