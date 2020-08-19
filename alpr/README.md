@@ -29,6 +29,11 @@ $ pip install -r requirements.txt
 ```bash
 $ python video.py
 ```
+* Run the flask app on different terminal
+```
+$ python app.py
+```
+* Open [0.0.0.0:5000](0.0.0.0:5000) in your web browser
 
 ### References
 
