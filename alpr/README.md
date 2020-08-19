@@ -25,15 +25,7 @@ $ pip install -r requirements.txt
 
 ### Running on example video
 *   Download the video file from [here](http://youtube.com/watch?v=hv94fk7ldS8) and save it as demo.mp4
-*   **Without vehicle detection** (Faster but picks up any text on the frame)
-```shellscript
-$ python video_support_v1.py
-```
-*   **With vehicle detection** (Slower but picks up text from detected vehicles only)
-```shellscript
-$ python video_support_v2.py
-```
-* **Latest Code**
+*   Run the code by
 ```bash
 $ python video.py
 ```
