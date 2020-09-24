@@ -1,20 +1,32 @@
-# License-Plate-Recognition
-Detection of license plate and recognising the registration number
+### Setup Instructions
 
-### Usage
-*   Clone the repository
-    ```bash
-    git clone https://github.com/saswat0/License-Plate-Recognition.git
-    ```
-*   Run demo code
-    ```bash
-    python demo.py
-    ```
-
-### Retraining the network
-The pretrained weights (validation accuracy 99.2%) are attached already. In case you wish to train it from scratch, run</br>
-```bash
-python train.py
+* Download the model weights
+```shellscript
+$ bash get-networks.sh
+```
+* Configure darknet
+```shellscript
+$ cd darknet && make
 ```
 
-**Update**: Implemented a finer network under alpr directory by following this [paper](http://sergiomsilva.com/pubs/alpr-unconstrained/)
+Install requirements:
+```bash
+$ pip install -r requirements.txt
+```
+
+### Running a simple test on given images
+
+```shellscript
+$ bash run.sh -i samples/test -o /tmp/output -c /tmp/output/results.csv
+```
+
+### To test the lastest code
+*   Download the video file from [here](http://youtube.com/watch?v=hv94fk7ldS8) and save it as demo.mp4
+*   Run the base detection code
+```bash
+python video.py
+```
+*   Run flask app
+```bash
+python app.py
+```

@@ -1,1 +1,5 @@
 __pycache__
+data/*
+models
+samples
+*.png
